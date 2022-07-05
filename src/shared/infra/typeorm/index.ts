@@ -10,7 +10,7 @@ const AppDataSource = new DataSource({
   database: "rentalx",
   synchronize: false,
   logging: true,
-  migrations: ["./src/database/migrations/*.ts"],
+  migrations: ["./src/shared/infra/typeorm/migrations/*.ts"],
   entities: ["./src/modules/**/entities/*.ts"],
 });
 
